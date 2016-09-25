@@ -3,4 +3,8 @@ sudo: required
 rvm:
   - 2.2
   - 2.3.1
-    
+  
+ deploy:
+  provider: heroku
+  api_key:
+    secure: e1555a19-c2af-4744-96f5-5846f53c0dc9
