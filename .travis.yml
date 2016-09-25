@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.3
   - jruby
-  - rbx-2
+  - rbx-3
   
   
 deploy:
