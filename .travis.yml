@@ -3,10 +3,3 @@ sudo: required
 rvm:
 - 2.2
 - 2.3.1
-deploy:
-  provider: heroku
-  api_key:
-    secure: LeHMSQsPzfoErVWXQC+5DmKx9HLMiq25Teo9D08VkOusmR33g6gogzexfF3Vgzss/mjnR3LiYASTD3xALQDTSUVBt2EeOGs51VIOPOyZn9lkMRct5ZlthGOtZdLhjvebB98flRBAu5nYsvt3StQg8mMzO5X9VF2z+dSrJlMXdnC7ZGzJBHUqZrRBK2jMkpU7PVDGzNZfEjve/mvWNyK/zHPnkJcMiP8+mJt039g3SNa9/JD2V2x/e7hZwzCLIAg52fStF4N+UdpHk8heCly1TVPviQSH5q0xCe9dw8yiT5J+hJsPK+Zr0m8vljQN9t5ERtLUJ8Z/7GMZeaqd0KWUDh6fxJeBTEVZJ2uley7HCvmBDdyEsXWr5chlrkB+f8yvk4tY7LS3KRzMiBrIdtAUUR9dzeXC8BHL1EyNe6E6J866pOfchg3wcSjLZMW8WLGmj3XboTxdaQ3ZcPQZW4oz639k60m6SDbZ1MAZUBt8Vikz3MP1yuBS4q76mdQm1+1cmvm1SQSNW71KUDLlZ2J9x147VPNQl/imD6Um/KB74y9urUgkDiaeOGHVqS58xLIGPSIdagcQv7KJdQvHX28rMrQG9SGfctBX9nAnsqyzpv3oNUKkJ5gOtgKhygOmFps9O8TzR7xexo7iF2W1c+fkgVFqp5kLftw9+pwS4ltz1/Y=
-  app: Projet
-  on:
-    repo: HuangMichel/projet
