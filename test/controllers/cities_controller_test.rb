@@ -17,6 +17,7 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should create city" do
+    VRC.use_cassette("nominatim") do
     assert_difference('City.count') do
       post :create, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
     end
