@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @city.lat %>
+</p>
+
+<p>
+  <strong>Lon:</strong>
+  <%= @city.lon %>
+</p>
+
+<strong>Weather:</strong>
+  <%= @weather %>
+</p>
+
+<strong>Temperature :</strong>
+  <%=  @current_temp %>
+</p>
+
+<strong> WindSpeed: </strong>
+  <%=  @current_wind %>
+</p>
+
+<strong> ICON :</strong>
+  <%=  @current_icon %>
+</p>
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>
