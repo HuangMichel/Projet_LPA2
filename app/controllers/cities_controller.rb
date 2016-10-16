@@ -12,7 +12,7 @@ class CitiesController < ApplicationController
   def show
     @weather = @city.forecast_io.currently.summary
     @current_temp = @city.forecast_io.currently.temperature
-    @current_wind =  @city.forecast_io.currently.windSpeed
+    @current_wind = @city.forecast_io.currently.windSpeed
     @current_icon = @city.forecast_io.currently.icon
   end
 
