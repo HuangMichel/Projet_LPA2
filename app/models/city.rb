@@ -10,11 +10,13 @@ class City < ActiveRecord::Base
 
       result[:current_wind]=forecast.currently.windSpeed
 
-      result[:icon=forecast.currently.icon
+      result[:icon]=forecast.currently.icon
 
       result[:summary]=forecast.currently.summary
 
       result[:current_temp]=forecast.currently.temperature
+
+result
     end
   
   private
