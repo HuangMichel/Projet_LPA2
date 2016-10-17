@@ -16,19 +16,19 @@
 </p>
 
 <strong>Weather:</strong>
-  <%= @weather %>
+  <%= @weather[:summary] %>
 </p>
 
 <strong>Temperature :</strong>
-  <%=  @current_temp %>
+  <%=  @weather[:current_temp] %>
 </p>
 
 <strong> WindSpeed: </strong>
-  <%=  @current_wind %>
+  <%=  @weather[:current_wind] %>
 </p>
 
 <strong> ICON :</strong>
-  <%=  @current_icon %>
+  <%=  @weather[:icon] %>
 </p>
 
 <%= link_to 'Edit', edit_city_path(@city) %> |

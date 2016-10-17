@@ -5,6 +5,16 @@ class City < ActiveRecord::Base
   
     def forecast_io
       forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si'})
+
+      result={}    
+
+      result[:current_wind]=forecast.currently.windSpeed
+
+      result[:icon=forecast.currently.icon
+
+      result[:summary]=forecast.currently.summary
+
+      result[:current_temp]=forecast.currently.temperature
     end
   
   private

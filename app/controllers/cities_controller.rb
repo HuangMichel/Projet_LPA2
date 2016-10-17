@@ -5,15 +5,15 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
+       @cities.each do |city|
+         city.forecast_io
+       end
   end
 
   # GET /cities/1
   # GET /cities/1.json
   def show
-    @weather = @city.forecast_io.currently.summary
-    @current_temp = @city.forecast_io.currently.temperature
-    @current_wind = @city.forecast_io.currently.windSpeed
-    @current_icon = @city.forecast_io.currently.icon
+    @weather = @city.forecast_io
   end
 
   # GET /cities/new
