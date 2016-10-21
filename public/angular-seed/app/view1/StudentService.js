@@ -6,4 +6,4 @@ angular.module('myApp.view1.StudentService', ['ngResource','ngRoute'])
 
          return $resource('/students/:id')
         
-         }] );
+  }] );
