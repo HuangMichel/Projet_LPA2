@@ -1,14 +1,11 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.view1', ['ngRoute', 'StudentService'])
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
-  });
-}])
+  .controller('View1Ctrl', ['$scope','StudentService',function($scope, StudentService) {
 
-.controller('View1Ctrl', ['$scope',function($scope) {
-  $scope.students = [{name: "bob", surname: "dylan"}, {name: "T", surname: "M"}]
+    $scope.students = StudentService.query(function(){
+      console.log($scope.students)
+    });
+    
 }]);
