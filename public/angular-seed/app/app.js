@@ -11,17 +11,11 @@ angular
     'myApp.view1.StudentService'
 ])
 
-.config(['$routeProvider', '$locationProvider', 
-        function( $routeProvider, $locationProvider) {
+.config(['$locationProvider', '$routeProvider',
+        function($locationProvider, $routeProvider) {
           
   $locationProvider.hashPrefix('!');
-
-  $routeProvider
-    .when('app/view1', {
-    templateUrl: 'app/view1/view1.html',
-    controller: 'View1Ctrl'
-    })
-  
-    .otherwise({redirectTo: 'app/view1'
-    });
+          
+  $routeProvider.otherwise({redirectTo: '/view1'});
+          
 }]);

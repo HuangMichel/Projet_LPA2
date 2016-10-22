@@ -4,7 +4,7 @@ angular.module('myApp.view1.StudentService', ['ngResource'])
 
   .factory('Studentservice',['$resource',function($resource){
 
-        return $resource('http://studentliste.herokuapp.com/students/')
+        return $resource('http://studentliste.herokuapp.com/students/:id.json', {student: '@i'})
         
   }]);
 

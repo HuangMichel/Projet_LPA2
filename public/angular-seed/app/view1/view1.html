@@ -1,10 +1,21 @@
-<p>This is the partial for view 1.</p>
+  <h2>Students List</h2>
 
 <p>
     Search: <input ng-model="$ctrl.query" />
 </p>
-
-      <li ng-repeat="student in students | filter:$ctrl.query">
-        <span>{{students.name}}</span>
-        <p>{{student.surname}}</p>
-      </li>
+ 
+<table>
+  <tr>
+    <th>Edit</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Info</th>
+  </tr>
+  <tr ng-repeat="student in students | filter:$ctrl.query">
+    <td><button class="w3-btn w3-ripple" ng-click="editUser(user.id)">&#9998; Edit</button>
+    </td>
+      <td>{{student.name}}</td>
+      <td>{{student.surname}}<td>
+  </tr>
+</table>
+      
