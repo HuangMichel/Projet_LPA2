@@ -8,7 +8,7 @@ angular
     'myApp.view2',
     'myApp.version',
     'ngResource',
-    'StudentService'
+    'myApp.view1.StudentService'
 ])
 
 .config(['$routeProvider', '$locationProvider', 
@@ -17,11 +17,11 @@ angular
   $locationProvider.hashPrefix('!');
 
   $routeProvider
-    .when('/view1', {
-    templateUrl: 'view1/view1.html',
+    .when('app/view1', {
+    templateUrl: 'app/view1/view1.html',
     controller: 'View1Ctrl'
     })
   
-    .otherwise({redirectTo: '/view1'
+    .otherwise({redirectTo: 'app/view1'
     });
 }]);

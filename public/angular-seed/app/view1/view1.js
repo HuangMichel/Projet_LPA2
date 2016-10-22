@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute', 'StudentService'])
+angular.module('myApp.view1', ['ngRoute', 'myApp.view1.StudentService'])
 
-  .controller('View1Ctrl', ['$scope','StudentService',function($scope, StudentService) {
+  .controller('View1Ctrl', ['$scope','Studentservice', function($scope, Studentservice) {
 
-    $scope.students = StudentService.query(function(){
-      console.log($scope.students)
+    $scope.students = Studentservice.query(function(){
+     console.log($scope.students)
     });
-    
+//    $scope.users = Studentservice.query();
 }]);
