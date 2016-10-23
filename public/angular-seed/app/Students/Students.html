@@ -6,15 +6,13 @@
  
 <table>
   <tr>
-    <th>Edit</th>
     <th>Name</th>
     <th>Surname</th>
-    <th>Info</th>
+    <th>Birthday</th>
   </tr>
   <tr ng-repeat="student in students | filter:$ctrl.query">
-    <td><button class="w3-btn w3-ripple" ng-click="editUser(user.id)">&#9998; Edit</button>
-    </td>
       <td>{{student.name}}</td>
-      <td>{{student.surname}}<td>
+      <td>{{student.surname}}</td>
+      <td>{{student.birthday}}</td>
   </tr>
 </table>

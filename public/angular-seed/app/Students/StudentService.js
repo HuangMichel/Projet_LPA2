@@ -3,7 +3,6 @@
 angular.module('myApp.Studentlist.StudentService', ['ngResource'])
 
   .factory('Studentservice',['$resource',function($resource){
-
-        return $resource('/students/:id.json');
-        
+    var data = $resource('/students/:id.json',{students: '@id'});
+    return data;
   }]);

@@ -13,8 +13,6 @@ angular.module('myApp.Studentlist', ['ngRoute', 'myApp.Studentlist.StudentServic
 
   .controller('StudentsCtrl', ['$scope','Studentservice', function($scope, Studentservice) {
 
-    $scope.students = Studentservice.query(function(){
-      console.log($scope.students)
-    });
-//    $scope.users = Studentservice.query();
+    $scope.students = Studentservice.query();
+    
 }]);
