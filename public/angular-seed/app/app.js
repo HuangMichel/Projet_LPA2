@@ -11,11 +11,18 @@ angular
     'myApp.Studentlist.StudentService'
 ])
 
-.config(['$locationProvider', '$routeProvider',
-        function($locationProvider, $routeProvider) {
+.config(['$locationProvider', '$routeProvider', '$resourceProvider',
+        function($locationProvider, $routeProvider, $resourceProvider) {
           
   $locationProvider.hashPrefix('!');
           
   $routeProvider.otherwise({redirectTo: '/Students'});
+  
+  $resourceProvider.defaults.stripTrailingSlashes = false;
+//  $resourceProvider.defaults.useXDomain = true;
+//  $resourceProvider.defaults.withCredentials = true;
+//  delete $resourceProvider.defaults.headers.common["X-Requested-With"];
+//  $resourceProvider.defaults.headers.common["Accept"] = "app/json";
+//  $resourceProvider.defaults.headers.common["Content-Type"] = "app/json";
           
 }]);
