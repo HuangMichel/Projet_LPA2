@@ -4,11 +4,11 @@
 angular
   .module('myApp', [
     'ngRoute',
-    'myApp.view1',
+    'myApp.Studentlist',
     'myApp.view2',
     'myApp.version',
     'ngResource',
-    'myApp.view1.StudentService'
+    'myApp.Studentlist.StudentService'
 ])
 
 .config(['$locationProvider', '$routeProvider',
@@ -16,6 +16,6 @@ angular
           
   $locationProvider.hashPrefix('!');
           
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/Students'});
           
 }]);
