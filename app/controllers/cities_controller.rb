@@ -10,7 +10,7 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
-    @weather = @city.forecast_io
+    @weather = @city.weather
   end
 
   # GET /cities/new
