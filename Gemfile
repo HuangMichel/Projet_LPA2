@@ -8,6 +8,8 @@ gem 'rails', '4.2.7.1'
 group :development, :test do
   gem "sqlite3"
   gem 'vcr', '~> 3.0', '>= 3.0.3'
+  gem "simplecov"
+  gem "codeclimate-test-reporter", "~> 1.0.0"
 end
 
 group :production do
