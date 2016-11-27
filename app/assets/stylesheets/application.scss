@@ -13,3 +13,13 @@
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#main{
+  margin:25px;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+table, th, td{
+  border:10px solid hsla(0,0%,100%,2);
+}
